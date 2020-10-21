@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista zadań</title>
+        <meta charset="utf-8"/>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            #gridContainer {padding: 20px;}
+            .row > div {border: 1px solid lightgray; padding: 10px; background-color: aliceblue; margin: 5px 0;}
+        </style>
+    </head>
+    <body class="m-a-1">
+        <h3 class="bg-primary p-a-1">Lista Kuby</h3>
+            <div class="col-xs-4">
+                <form>
+                    <div class="form-group">
+                        <label>Zadanie</label>
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Miejsce</label>
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"/>
+                        <label>Wykonane</label>
+                    </div>
+                    <button class="btn btn-primary">Dodaj</button>
+                </form>
+            </div>
+        <div class="col-xs-8">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Zadanie</th>
+                        <th>Wykonane</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Kupić kwiaty</td><td>Nie</td></tr>
+                    <tr><td>Kupić buty</td><td>Nie</td></tr>
+                    <tr><td>Odebrać bilety</td><td>Tak</td></tr>
+                    <tr><td>Zadzwonić do Janka</td><td>Nie</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
